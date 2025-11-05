@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './counter' 
+import Batsman from './batsman' 
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <button onClick={handleClick}>Login</button>
       <button onClick={handleClick2}>Click2</button>
       <Counter> </Counter>
+      <Batsman> </Batsman>
       
       
    

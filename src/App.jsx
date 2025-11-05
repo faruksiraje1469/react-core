@@ -2,21 +2,27 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './counter' 
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  const handleClick2 = () => {
+    alert('Button Clicked2!')
+  }
+
+  function handleClick () {
+    alert('Login Successful!')
+  }
+ 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+      
       <h1>Vite + React</h1>
+      <button>Click Me</button>
+      <button onClick={handleClick}>Login</button>
+      <button onClick={handleClick2}>Click2</button>
+      <Counter> </Counter>
+      
       
    
     </>
